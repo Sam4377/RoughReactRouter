@@ -6,7 +6,7 @@ import NavBar from './navbar'
 import HomePage from './homepage'
 import AllUsers from './allusers'
 import AllPosts from './posts'
-import SinglePost from './singleuser'
+import SingleUser from './singleuser'
 
 function App() {
   const [users, allUsers] = useState([])
@@ -37,7 +37,7 @@ function App() {
           <Route path='/' element={<HomePage  />}/>
           <Route path='/users' element={<AllUsers allUsers={users}/>}/>
           <Route path='/posts' element={<AllPosts allPosts={posts}/>}/>
-          <Route path='/users:id' element={<SinglePost allUsers={users}/>}/>
+          <Route path='/users:id' element={<SingleUser allUsers={users}/>}/>
         </Routes>
     </div>
   )
